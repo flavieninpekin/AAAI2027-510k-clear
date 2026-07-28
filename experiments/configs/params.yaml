@@ -1,0 +1,52 @@
+# Hyperparameters for all experiments
+ppo:
+  learning_rate: 3e-4
+  n_steps: 2048
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01
+  net_arch: [256, 256]
+  total_timesteps: 1000000
+
+dqn:
+  learning_rate: 1e-4
+  buffer_size: 50000
+  batch_size: 64
+  gamma: 0.99
+  train_freq: 4
+  target_update_interval: 1000
+  exploration_fraction: 0.1
+  total_timesteps: 500000
+
+a2c:
+  learning_rate: 3e-4
+  n_steps: 2048
+  gamma: 0.99
+  gae_lambda: 0.95
+  ent_coef: 0.01
+  total_timesteps: 1000000
+
+sac:
+  learning_rate: 3e-4
+  buffer_size: 50000
+  batch_size: 64
+  gamma: 0.99
+  total_timesteps: 500000
+
+reinforce:
+  learning_rate: 1e-3
+  gamma: 0.99
+  total_timesteps: 500000
+
+overcooked:
+  ppo:
+    total_timesteps: 1000000
+    n_envs: 8
+
+toy:
+  ppo:
+    total_timesteps: 5000
+    n_envs: 4

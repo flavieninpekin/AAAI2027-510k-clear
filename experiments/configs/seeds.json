@@ -1,0 +1,39 @@
+{
+    "_comment": "Seed configurations for all experiments",
+    "510k": {
+        "ppo": {
+            "single":  {"start_seed": 41, "n_seeds": 5},
+            "static":  {"start_seed": 46, "n_seeds": 5},
+            "dynamic": {"start_seed": 71, "n_seeds": 4},
+            "obvious": {"start_seed": 101, "n_seeds": 8}
+        },
+        "dqn": {
+            "single":  {"start_seed": 41, "n_seeds": 8},
+            "dynamic": {"start_seed": 41, "n_seeds": 8}
+        },
+        "a2c": {
+            "single":  {"start_seed": 41, "n_seeds": 8},
+            "dynamic": {"start_seed": 41, "n_seeds": 8}
+        },
+        "sac": {
+            "single":  {"start_seed": 41, "n_seeds": 8},
+            "dynamic": {"start_seed": 41, "n_seeds": 8}
+        },
+        "reinforce_sp": {
+            "single":  {"start_seed": 41, "n_seeds": 8},
+            "dynamic": {"start_seed": 41, "n_seeds": 8}
+        }
+    },
+    "overcooked_v3": {
+        "ppo": {
+            "static":  {"start_seed": 41, "n_seeds": 8},
+            "dynamic": {"start_seed": 41, "n_seeds": 8}
+        }
+    },
+    "toy": {
+        "ppo": {
+            "hidden":  {"start_seed": 0, "n_seeds": 10},
+            "revealed": {"start_seed": 0, "n_seeds": 10}
+        }
+    }
+}
