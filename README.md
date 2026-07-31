@@ -57,8 +57,8 @@ python experiments/reproduce_figures.py
 
 ## Algorithms
 
-PPO (MaskablePPO), DQN, A2C, SAC, REINFORCE, MAPPO — tested across 3 environments with 100+ total seeds.
+PPO (MaskablePPO), DQN, A2C, SAC, REINFORCE, MAPPO — across 3 environments.
 
 ## Key Metric: kappa
 
-**kappa** = gradient retention ratio (0 = full cancellation, 1 = full alignment). PG methods show kappa contraction under hidden info; value-based methods show reversed pattern.
+**kappa** = gradient retention ratio (0 = full cancellation, 1 = full alignment). kappa is defined per gradient estimator: policy-gradient fields contract under hidden relations, while TD-loss fields do not (Prop. 4 in the paper).
